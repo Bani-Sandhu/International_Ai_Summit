@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: khaki;
+        }
+        .h2{
+            color: white;
+            background-color:salmon;
+            height: 50px;
+            width: 400px;
+        }
+        .p1{
+            display: none;
+            background-color: white;
+        }
+        button{
+            float: right;
+            margin: 5px 5px;
+            padding: 2px 3px;
+        }
+        .h3{
+            background-color: dimgray;
+        }
+        .h4{
+            background-color: dimgray;
+      
+           
+        }
+        .h5{
+            background-color:darkgray;
+            height: 45px;
+            
+        }
+        .h6{
+            background-color: dimgray;
+        }
+        .p3{
+            background-color: white;
+        }
+        .p4{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h2"><i>INTERNATIONAL SUMMIT</i></h1>
+    <p>Read these Collapsibles carefully to understand inetrnational AI summit</p>
+    <div id="d1">
+        <h1 class="h3">About AI summit <button onclick="show1()">+</button> <button onclick="hide1()">-</button></h1>
+        <p class="p1">Artificial intelligence (AI) is the ability of machines to perform tasks that are typically associated with human intelligence, such as learning and problem-solving. AI applications include advanced web search engines (e.g., Google Search), recommendation systems (used by YouTube, Amazon, and Netflix), understanding human speech (such as Siri and Alexa), self-driving cars (e.g., Waymo), generative or creative tools (ChatGPT and AI art), and competing at the highest level in strategic games (such as chess and Go).Artificial intelligence was founded as an academic discipline in 1956. The field went through multiple cycles of optimism followed by disappointment and loss of funding, but after 2012, when deep learning surpassed all previous AI techniques, there was a vast increase in funding and interest.
+
+            The various sub-fields of AI research are centered around particular goals and the use of particular tools.</p>
+    </div>
+    <div>
+        <br><br>
+        <p>Event related information:</p>
+        <br>
+        <h1 class="h5">Sectors <button onclick="show2()">+</button> <button onclick="hide2()">-</button></h1>
+        <div class="d2">
+            <h1 class="h4">Our Guests and Speakers <button onclick="show3()">+</button> <button onclick="hide3()">-</button></h1>
+            <p class="p3">1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias saepe illum modi ipsa, distinctio odit?<br><br>
+            2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla blanditiis tempore quo voluptas magni beatae ullam maxime at.<br><br>
+        3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto unde a doloremque modi!
+        <br><br>
+        4. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere aspernatur fuga maiores, provident tenetur enim harum assumenda sunt atque rerum.
+        <br><br>
+
+    </p>
+        </div>
+        <div class="d3">
+            <h1 class="h6" >Exhibit <button onclick="show4()">+</button> <button onclick="hide4()">-</button></h1>
+            <p class="p4">Natural language processing (NLP) allows programs to read, write and communicate in human languages such as English. Specific problems include speech recognition, speech synthesis, machine translation, information extraction, information retrieval and question answering.
+
+                Early work, based on Noam Chomsky's generative grammar and semantic networks, had difficulty with word-sense disambiguation unless restricted to small domains called "micro-worlds" (due to the common sense knowledge problem).
+                
+                Modern deep learning techniques for NLP include word embedding (how often one word appears near another), transformers (which finds patterns in text), and others. In 2019, generative pre-trained transformer (or "GPT") language models began to generate coherent text, and by 2023 these models were able to get human-level scores on the bar exam, SAT, GRE, and many other real-world applications.</p>
+        </div>
+    </div>
+    <script>
+        function show1(){
+        document.querySelector(".p1").style.display="block"
+        }
+        function hide1(){
+        document.querySelector(".p1").style.display="none"
+        }
+        function show2(){
+        document.querySelector(".d2").style.display="block"
+        document.querySelector(".d3").style.display="block"
+        }
+        function hide2(){
+        document.querySelector(".d3").style.display="none"
+        document.querySelector(".d2").style.display="none"
+        }
+        function show3(){
+        document.querySelector(".p3").style.display="block"
+        }
+        function hide3(){
+        document.querySelector(".p3").style.display="none"
+        }
+        function show4(){
+        document.querySelector(".p4").style.display="block"
+        }
+        function hide4(){
+        document.querySelector(".p4").style.display="none"
+        }
+    </script>
+</body>
+</html>
